@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Docker Login') {
+        stage('Docker Push') {
             steps {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'DockerHub-mosazhaw', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
