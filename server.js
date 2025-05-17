@@ -9,7 +9,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Teständerung von Zilan – läuft alles automatisch?');
+  res.send('Hallo Welt von Zilan!');
 });
 
 app.listen(PORT, HOST);
